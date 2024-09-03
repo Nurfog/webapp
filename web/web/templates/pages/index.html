@@ -6,6 +6,89 @@
 
 {% block content %}
 
+
+    <!-- formulario contacto -->
+    <div class="container-fluid" style="background-color: #ffbd59;">
+        <div class="row">
+            <div class="col-12">
+                <br>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div style="text-align: center;">
+                    <img class="img-fluid" width="370" src="{% static 'img/contacto2.png' %}" alt="">
+                </div>        
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <div class="mt-4">
+                    <br>
+                    <h3>
+                        <strong>
+                            No esperes más tiempo, da tu primer paso para aprender inglés
+                        </strong>
+                    </h3>
+                    <h1>
+                        <strong>
+                            Contáctanos !
+                        </strong>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="row mt-3">
+                        <div class="col-2"></div>
+                        <div class="col-8 mt-2 text-center">
+                            <input id="txt_name" type="text" class="form-control" placeholder="Nombre" autocomplete="off" style="font-weight:bold;">
+                            <strong></strong>
+                        </div>
+                </div>
+                <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8 mt-2 text-center">
+                                <input id="txt_correo" type="text" class="form-control" placeholder="Email" autocomplete="off" style="font-weight:bold;">
+                                <strong></strong>
+                            </div>
+                </div>
+                <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-3 mt-2">
+                            <input id="txt_tel" type="tel" value="+56" readonly="readonly" class="form-control text-center" placeholder="Tel" autocomplete="off" style="font-weight:bold;">
+                        </div>
+                        <div class="col-5 mt-2 text-center">
+                            <input id="txt_telefono" type="text" class="form-control" maxlength="9" placeholder="Teléfono"  autocomplete="off" style="font-weight:bold;">
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-2"></div>
+                        <div class="col-8 mt-2 text-center">
+                        </div>
+                        
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 text-center">
+                        <select id="combo_programa" class="form-select" name="programa" style="font-weight: bold;">
+                            <option value="0">Programa</option>
+                            <option value="1">Adultos</option>
+                            <option value="2">Adolescentes</option>
+                            <option value="3">Niñas y Niñoos</option>
+                            <option value="4">Preescolares</option>
+                            <option value="5">Empresas</option>
+                            <option value="6">Preparación TOEFL</option>
+                            <option value="7">Preparación PTE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 mt-2 text-center">
+                        <a target="_blank" href="https://diagnostico.norteamericano.cl/" 
+                        class="btn btn-danger py-2 px-lg-5 d-block">Enviar<i class="fa fa-arrow-right ms-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- formulario contacto -->
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
@@ -30,7 +113,7 @@
                 <!--<div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
                         <div class="row justify-content-start">
-                           <!-- <div class="col-sm-10 col-lg-8">
+                                <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Best Online Courses</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Get Educated Online From Your Home</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>

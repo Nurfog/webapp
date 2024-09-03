@@ -29,6 +29,7 @@
 
         <!-- Template Stylesheet -->
         <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/contactform.css' %}" rel="stylesheet">
 
         {% load bootstrap5 %}
 
@@ -41,15 +42,22 @@
     </head>
 
     <body>
+        <div class="row">
+            <div class="col-12">
+                {% include 'header.html' %}
+            </div>
+                {% include 'contactform.html' %}
+            <div class="col-12">
+                {% block content %}
+            </div>
+            <div class="col-12"></div>
+                {% endblock %}
+            </div>
+            <div class="col-12">
+                {% include 'footer.html' %}
 
-        {% include 'header.html' %}
-
-        {% block content %}
-        
-        {% endblock %}
-
-        {% include 'footer.html' %}
-        
+            </div>
+        </div>
         <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
